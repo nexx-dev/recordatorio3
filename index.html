@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#17234d">
+  <meta name="description" content="Una misión especial para mi niña.">
+  <title>Mi dúo favorito 💙</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <main class="app-shell">
+    <header class="topbar">
+      <div class="brand-mark" aria-hidden="true">♡</div>
+      <div>
+        <p class="eyebrow">OPERACIÓN: CORAZÓN CONTENTO</p>
+        <p class="brand-name">Para mi niña <span>♥</span></p>
+      </div>
+      <div class="mission-status"><span class="status-dot"></span> misión activa</div>
+    </header>
+
+    <section class="screen screen-welcome active" id="screen-welcome" aria-labelledby="welcome-title">
+      <div class="welcome-copy">
+        <div class="mini-tag"><span>✦</span> NUEVA MISIÓN DESBLOQUEADA <span>✦</span></div>
+        <h1 id="welcome-title">Oye, <span id="her-name">mi niña</span>…</h1>
+        <p class="lead">Tengo una misión importante para ti.</p>
+        <p class="intro">No necesitas apuntar perfecto ni ganar todas las partidas. Solo quiero que vengas a descubrir algo que a veces no te digo lo suficiente. 💙</p>
+        <button class="primary-button" id="start-mission">
+          <span class="button-icon">🎮</span> Iniciar misión
+          <span class="button-arrow" aria-hidden="true">→</span>
+        </button>
+        <p class="microcopy">Duración estimada: un abrazo y una sonrisa.</p>
+      </div>
+
+      <div class="hero-art" aria-label="Ilustración decorativa de dos compañeros jugando juntos">
+        <div class="moon"></div>
+        <span class="spark spark-a">✦</span><span class="spark spark-b">♡</span><span class="spark spark-c">✧</span>
+        <div class="cloud cloud-a"></div><div class="cloud cloud-b"></div>
+        <div class="game-card">
+          <div class="game-card-top"><span>DUO MODE</span><span class="tiny-heart">♥</span></div>
+          <div class="game-scene">
+            <img class="game-photo" src="img/duo-jugando.jpg" alt="Nosotros jugando juntos">
+          </div>
+          <div class="game-card-bottom"><span>JUNTOS ES MEJOR</span><span>∞</span></div>
+        </div>
+        <div class="blue-pup-note">
+          <div class="pup-doodle" aria-hidden="true"><span class="ear ear-left"></span><span class="ear ear-right"></span><span class="pup-eye eye-left"></span><span class="pup-eye eye-right"></span><span class="pup-muzzle"></span><span class="pup-nose"></span></div>
+          <div><strong>Regla del dúo</strong><small>Primero el cariño,<br>después la siguiente partida.</small></div>
+        </div>
+        <div class="soft-cloud-label">respawn de abrazos <span>♡</span></div>
+      </div>
+      <div class="bottom-note"><span>♥</span> Una partida no define lo bonito que es compartir contigo. <span>♥</span></div>
+    </section>
+
+    <section class="screen screen-letter" id="screen-letter" aria-labelledby="letter-title" hidden>
+      <div class="page-heading">
+        <button class="back-button" id="back-home" aria-label="Volver a la bienvenida">←</button>
+        <div><p class="eyebrow">NIVEL 02 · LO QUE DE VERDAD IMPORTA</p><h2 id="letter-title">Mi dúo favorito <span>eres tú</span></h2></div>
+        <div class="level-chip">02 <span>/ 03</span></div>
+      </div>
+
+      <p class="section-intro">Toca las tarjetas para descubrir algunos recordatorios importantes, mi niña. ✨</p>
+      <p class="seen-counter" id="seen-counter" aria-live="polite">0 de 4 descubiertas</p>
+
+      <div class="memory-grid">
+        <button class="memory-card card-pink" data-message="A veces nos gana la emoción de la partida. Si me frustro, es por el momento del juego; no porque me aburra de ti. Quiero aprender a expresarlo mejor y cuidar cómo te hago sentir." aria-expanded="false">
+          <span class="card-illustration controller-art" aria-hidden="true">🎮<span>♡</span></span>
+          <span class="card-label">Cuando jugamos</span>
+          <span class="card-prompt">👆 Toca para abrir</span>
+          <span class="card-reveal"></span>
+        </button>
+        <button class="memory-card card-blue" data-message="Me gusta compartir este ratito contigo, incluso cuando no hacemos una partida perfecta. No necesito que todo salga bien para disfrutar de tenerte a mi lado." aria-expanded="false">
+          <span class="card-illustration cozy-art" aria-hidden="true"><span class="cozy-sun">☀</span><span class="cozy-cup">☕</span><span class="cozy-heart">♥</span></span>
+          <span class="card-label">Fuera del juego</span>
+          <span class="card-prompt">👆 Toca para abrir</span>
+          <span class="card-reveal"></span>
+        </button>
+        <button class="memory-card card-yellow" data-message="También quiero conocer las cosas que te encantan, escuchar tus historias y ver contigo esas aventuras que te hacen reír. Si algo te hace feliz, quiero que me lo cuentes." aria-expanded="false">
+          <span class="card-illustration pup-art" aria-hidden="true"><span class="pup-big">🐶</span><span class="pup-small">🐾</span><span class="pup-star">✦</span></span>
+          <span class="card-label">Tu mundo también</span>
+          <span class="card-prompt">👆 Toca para abrir</span>
+          <span class="card-reveal"></span>
+        </button>
+        <button class="memory-card card-lilac" data-video="img/bluey.mp4" aria-expanded="false">
+          <span class="card-illustration heart-art" aria-hidden="true">💌<span>✦</span></span>
+          <span class="card-label">Un recordatorio</span>
+          <span class="card-prompt">👆 Toca para abrir</span>
+          <span class="card-reveal"></span>
+        </button>
+      </div>
+
+      <div class="mini-game-panel">
+        <div class="mini-game-copy">
+          <p class="eyebrow">PROTOCOLO ANTI-RABIA</p>
+          <h3>¿Y si perdemos otra partida?</h3>
+          <p>Presiona el botón para recibir un plan de recuperación de dúo.</p>
+        </div>
+        <button class="surprise-button" id="anti-rage"><span aria-hidden="true">🎲</span> Activar plan</button>
+        <div class="surprise-result" id="surprise-result" aria-live="polite">Esperando la próxima misión…</div>
+      </div>
+
+      <div class="next-wrap">
+        <button class="primary-button" id="go-letter">
+          <span class="button-icon">💌</span> Abrir mi cartita
+          <span class="button-arrow" aria-hidden="true">→</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="screen screen-final" id="screen-final" aria-labelledby="final-title" hidden>
+      <div class="page-heading">
+        <button class="back-button" id="back-letter" aria-label="Volver al nivel anterior">←</button>
+        <div><p class="eyebrow">NIVEL 03 · MENSAJE FINAL</p><h2 id="final-title">Una cartita <span>para ti</span></h2></div>
+        <div class="level-chip">03 <span>/ 03</span></div>
+      </div>
+
+      <div class="letter-paper">
+        <div class="paper-stamp" aria-hidden="true">♡</div>
+        <p class="eyebrow">UNA CARTITA PARA TI</p>
+        <h3 id="letter-greeting">Mi niña bonita,</h3>
+        <p>Quiero que sepas que <strong>no me aburro de ti</strong>. A veces la tensión del juego me gana y puedo frustrarme, pero eso no significa que me canse de compartir tiempo contigo.</p>
+        <p>Me gusta que tengamos nuestro espacio para jugar, reírnos y pasar tiempo juntos. Y también quiero cuidar esos momentos en los que algo no sale bien, para que no termines sintiendo que no quiero estar contigo.</p>
+        <p>No espero que todas las partidas sean perfectas. Prefiero que podamos hablar, respirar, volver a reírnos y seguir disfrutando. Me importas tú, dentro y fuera del juego. 💙</p>
+        <p>Gracias por tu paciencia, por tus risas y por dejarme ser parte de tu mundo. <strong>Lo mejor de mis días es compartirlos contigo.</strong> 💙</p>
+        <p class="letter-signoff">Tu compañero de dúo,<br><span>el que te elige una y otra vez ♥</span></p>
+        <p class="letter-date" id="letter-date"></p>
+        <div class="paper-doodles" aria-hidden="true"><span>✦</span><span>♡</span><span>🐾</span></div>
+      </div>
+
+      <div class="end-cap">
+        <span class="end-heart">♥</span>
+        <p><strong>Misión completada.</strong><br>Recompensa desbloqueada: una sonrisa tuya.</p>
+        <button class="restart-button" id="restart">Volver a darme una sonrisa ↻</button>
+      </div>
+    </section>
+
+    <footer class="site-footer"><span>hecho con cariño, para ti</span><span>♥</span><span>sin importar el marcador</span></footer>
+  </main>
+
+  <div class="modal" id="modal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" data-close aria-label="Cerrar">✕</button>
+      <h3 id="modal-title"></h3>
+      <p id="modal-text"></p>
+      <video id="modal-video" controls playsinline hidden></video>
+    </div>
+  </div>
+
+  <div class="toast-hearts" id="toast-hearts" aria-hidden="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>
